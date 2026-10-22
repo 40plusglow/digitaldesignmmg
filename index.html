@@ -1,0 +1,1512 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Digital Design, Media & Marketing Group | Nationwide Digital Agency</title>
+
+<meta name="description" content="Professional website design, AI-powered digital commercials, branding and digital marketing for businesses nationwide.">
+
+<style>
+:root {
+  --navy:#06152f;
+  --navy2:#0b2854;
+  --blue:#0865ff;
+  --cyan:#16c8ff;
+  --silver:#e7edf6;
+  --text:#13213d;
+  --muted:#627089;
+  --white:#ffffff;
+}
+
+* {box-sizing:border-box}
+
+html {scroll-behavior:smooth}
+
+body {
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+  background:white;
+}
+
+a {text-decoration:none;color:inherit}
+
+button,input,select,textarea {font:inherit}
+
+.container {
+  width:min(1160px,92%);
+  margin:auto;
+}
+
+.section {
+  padding:76px 0;
+}
+
+.section-heading {
+  text-align:center;
+  margin-bottom:36px;
+}
+
+.eyebrow {
+  color:var(--blue);
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+.section-heading h2 {
+  margin:9px 0;
+  font-size:clamp(26px,4vw,39px);
+  color:var(--navy);
+}
+
+.section-heading p {
+  color:var(--muted);
+  line-height:1.7;
+}
+
+.btn {
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  padding:14px 25px;
+  border-radius:30px;
+  background:linear-gradient(110deg,#00c8ff,#0755ff);
+  color:white;
+  font-weight:800;
+  font-size:14px;
+  border:0;
+  cursor:pointer;
+  box-shadow:0 5px 19px #0865ff44;
+  transition:transform .2s,box-shadow .2s;
+}
+
+.btn:hover {
+  transform:translateY(-2px);
+  box-shadow:0 8px 25px #0865ff66;
+}
+
+.btn-outline {
+  background:white;
+  color:var(--blue);
+  border:1px solid var(--blue);
+  box-shadow:none;
+}
+
+/* HEADER */
+
+header {
+  background:white;
+  position:sticky;
+  top:0;
+  z-index:100;
+  box-shadow:0 2px 14px #00133312;
+}
+
+.header-inner {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:22px;
+  min-height:84px;
+}
+
+.brand {
+  display:flex;
+  flex-direction:column;
+  line-height:1;
+  min-width:200px;
+}
+
+.brand-top {
+  font-size:29px;
+  font-weight:1000;
+  letter-spacing:-1.5px;
+  color:#082957;
+}
+
+.brand-top span {
+  color:#087aff;
+}
+
+.brand-mid {
+  font-size:20px;
+  font-weight:900;
+  letter-spacing:6px;
+  color:#8795a9;
+}
+
+.brand-bottom {
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:1px;
+  color:#122e59;
+  margin-top:5px;
+}
+
+nav {
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+nav a {
+  font-size:13px;
+  font-weight:700;
+}
+
+nav a:hover {color:var(--blue)}
+
+/* HERO */
+
+.hero {
+  position:relative;
+  overflow:hidden;
+  color:white;
+  background:
+    radial-gradient(circle at 78% 42%,#0662be88,transparent 35%),
+    linear-gradient(120deg,#020c20 5%,#082552 65%,#04132d);
+}
+
+.hero:before {
+  content:"";
+  position:absolute;
+  inset:0;
+  opacity:.25;
+  background-image:
+    linear-gradient(90deg,transparent 96%,#2e7aff 97%),
+    linear-gradient(0deg,transparent 96%,#2e7aff 97%);
+  background-size:90px 90px;
+  transform:perspective(450px) rotateX(28deg) scale(1.5);
+}
+
+.hero-inner {
+  min-height:520px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:40px;
+  position:relative;
+  z-index:1;
+  padding:65px 0;
+}
+
+.hero-label {
+  font-size:13px;
+  letter-spacing:3px;
+  line-height:1.6;
+  color:#c3eeff;
+  font-weight:700;
+}
+
+.hero h1 {
+  font-size:clamp(42px,5.7vw,76px);
+  line-height:.99;
+  letter-spacing:-2px;
+  margin:15px 0;
+  font-weight:1000;
+}
+
+.hero h1 span {
+  color:#5ad5ff;
+}
+
+.hero p {
+  font-size:16px;
+  line-height:1.8;
+  color:#e0eafa;
+  max-width:520px;
+  margin-bottom:25px;
+}
+
+.hero-points {
+  display:flex;
+  gap:22px;
+  flex-wrap:wrap;
+  margin-top:35px;
+}
+
+.hero-points div {
+  font-size:11px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+}
+
+.hero-points strong {
+  color:#58d8ff;
+  margin-right:5px;
+}
+
+/* DIGITAL DEVICE GRAPHICS */
+
+.hero-art {
+  position:relative;
+  height:350px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.desktop {
+  position:absolute;
+  width:90%;
+  height:245px;
+  top:10px;
+  left:0;
+  border:9px solid #152844;
+  border-radius:12px;
+  background:linear-gradient(135deg,#0b3b7b,#041127);
+  box-shadow:0 18px 45px #0009,0 0 25px #148bff55;
+  transform:rotate(-5deg);
+  overflow:hidden;
+}
+
+.desktop-screen {
+  padding:34px 22px;
+  height:100%;
+  background:
+    linear-gradient(130deg,#00152dcc,#0064ad77),
+    repeating-linear-gradient(90deg,#104d87 0 5px,#0b254d 5px 30px);
+}
+
+.desktop-screen h3 {
+  font-size:28px;
+  line-height:1.1;
+  margin:0 0 15px;
+}
+
+.desktop-screen p {
+  font-size:12px;
+  margin:0;
+}
+
+.laptop {
+  position:absolute;
+  width:74%;
+  height:175px;
+  right:-4%;
+  bottom:22px;
+  border:8px solid #172a49;
+  border-radius:12px;
+  background:linear-gradient(135deg,#07152f,#0757a2);
+  box-shadow:0 15px 40px #000c;
+  transform:rotate(3deg);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.play {
+  width:78px;
+  height:78px;
+  border:2px solid #69d7ff;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  font-size:36px;
+  color:white;
+  box-shadow:0 0 28px #00aaff;
+}
+
+.phone {
+  position:absolute;
+  right:-3%;
+  top:0;
+  width:90px;
+  height:174px;
+  border:7px solid #1d304b;
+  border-radius:19px;
+  background:linear-gradient(145deg,#0c67d5,#02152e);
+  box-shadow:0 12px 25px #0009;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  font-size:12px;
+  font-weight:bold;
+  line-height:1.8;
+}
+
+.glow-line {
+  position:absolute;
+  width:100%;
+  height:4px;
+  bottom:30px;
+  background:#13aaff;
+  box-shadow:0 0 20px #00bfff;
+}
+
+/* SERVICES */
+
+.services {
+  background:#f7f9fd;
+}
+
+.service-grid {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.service-card {
+  background:white;
+  border:1px solid #e1e8f3;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 5px 20px #0a23500c;
+  display:flex;
+  flex-direction:column;
+  transition:transform .2s;
+}
+
+.service-card:hover {
+  transform:translateY(-5px);
+}
+
+.service-visual {
+  height:165px;
+  background:linear-gradient(145deg,#061733,#0873d5);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  overflow:hidden;
+}
+
+.service-visual:after {
+  content:"";
+  position:absolute;
+  width:190px;
+  height:190px;
+  border:1px solid #3bcaff88;
+  border-radius:50%;
+  box-shadow:0 0 40px #008aff55;
+}
+
+.service-symbol {
+  position:relative;
+  z-index:1;
+  font-size:64px;
+  color:#bceeff;
+  text-shadow:0 0 18px #24baff;
+}
+
+.service-body {
+  padding:22px;
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+
+.service-body h3 {
+  font-size:16px;
+  color:var(--navy);
+  margin:0 0 12px;
+}
+
+.service-body p {
+  font-size:13px;
+  line-height:1.7;
+  color:var(--muted);
+  flex:1;
+}
+
+.service-body a {
+  color:var(--blue);
+  font-size:12px;
+  font-weight:800;
+  margin-top:15px;
+}
+
+/* TRUST STRIP */
+
+.trust-strip {
+  background:linear-gradient(90deg,#03142f,#073b80,#03142f);
+  color:white;
+  padding:27px 0;
+}
+
+.trust-grid {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+  text-align:center;
+}
+
+.trust-grid div {
+  font-size:12px;
+  font-weight:800;
+  line-height:1.6;
+  border-right:1px solid #ffffff33;
+}
+
+.trust-grid div:last-child {
+  border-right:0;
+}
+
+.trust-grid strong {
+  display:block;
+  font-size:22px;
+  color:#7bdcff;
+}
+
+/* ABOUT */
+
+.about-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+
+.about h2 {
+  font-size:38px;
+  color:var(--navy);
+}
+
+.about p {
+  line-height:1.9;
+  color:var(--muted);
+}
+
+.about-graphic {
+  min-height:310px;
+  border-radius:16px;
+  background:linear-gradient(135deg,#04152f,#0c56aa);
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:35px;
+  text-align:center;
+  box-shadow:0 15px 35px #10264c22;
+}
+
+.about-graphic div {
+  font-size:34px;
+  font-weight:900;
+  line-height:1.25;
+}
+
+.about-graphic span {
+  color:#64d8ff;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+  background:#f7f9fd;
+}
+
+.portfolio-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.project {
+  border-radius:12px;
+  overflow:hidden;
+  background:white;
+  box-shadow:0 5px 20px #08254c14;
+}
+
+.project-visual {
+  height:195px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  background:linear-gradient(135deg,#07152e,#1257a4);
+  color:white;
+  text-align:center;
+}
+
+.project-visual div {
+  font-size:27px;
+  font-weight:900;
+  line-height:1.3;
+}
+
+.project-visual span {
+  color:#7fdbff;
+}
+
+.project-body {
+  padding:20px;
+}
+
+.project-body h3 {
+  margin:0 0 8px;
+}
+
+.project-body p {
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.7;
+}
+
+.project-tag {
+  color:var(--blue);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:1px;
+}
+
+/* PROCESS */
+
+.process-grid {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  text-align:center;
+}
+
+.step-icon {
+  width:76px;
+  height:76px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#06b8ff,#073fa4);
+  color:white;
+  display:grid;
+  place-items:center;
+  margin:0 auto 20px;
+  font-size:30px;
+  box-shadow:0 7px 20px #096bde44;
+}
+
+.process-step h3 {
+  margin:0 0 8px;
+  color:var(--navy);
+}
+
+.process-step p {
+  font-size:13px;
+  line-height:1.7;
+  color:var(--muted);
+}
+
+/* PACKAGES */
+
+.packages {
+  background:#f7f9fd;
+}
+
+.package-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.package {
+  background:white;
+  padding:30px;
+  border:1px solid #dce7f4;
+  border-radius:14px;
+  box-shadow:0 8px 25px #0c265010;
+}
+
+.package.featured {
+  border:2px solid var(--blue);
+}
+
+.package h3 {
+  color:var(--navy);
+  font-size:21px;
+}
+
+.package p {
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.8;
+}
+
+.package ul {
+  padding-left:19px;
+  color:#344560;
+  line-height:2;
+  font-size:13px;
+}
+
+/* CONTACT */
+
+.contact {
+  background:white;
+}
+
+.contact-grid {
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:55px;
+  align-items:start;
+}
+
+.contact-info h2 {
+  font-size:36px;
+  color:var(--navy);
+}
+
+.contact-info p {
+  line-height:1.8;
+  color:var(--muted);
+}
+
+.contact-info a {
+  color:var(--blue);
+  overflow-wrap:anywhere;
+}
+
+form {
+  background:#f7f9fd;
+  padding:30px;
+  border-radius:15px;
+  border:1px solid #e0e7f2;
+}
+
+.form-row {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+
+.field {
+  margin-bottom:17px;
+}
+
+.field label {
+  display:block;
+  margin-bottom:7px;
+  font-size:13px;
+  font-weight:700;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width:100%;
+  padding:13px;
+  border:1px solid #cbd5e4;
+  border-radius:7px;
+  background:white;
+  color:#172845;
+}
+
+.field textarea {
+  min-height:120px;
+  resize:vertical;
+}
+
+/* FOOTER */
+
+.footer-cta {
+  background:
+    radial-gradient(circle at center,#1054aa,#04152f 70%);
+  color:white;
+  padding:65px 0;
+  text-align:center;
+}
+
+.footer-cta h2 {
+  font-size:clamp(26px,4vw,40px);
+  margin:0 0 10px;
+}
+
+.footer-cta p {
+  color:#d5e8ff;
+  margin-bottom:25px;
+}
+
+footer {
+  background:#020b1b;
+  color:#c7d6ec;
+  padding:25px 0;
+  text-align:center;
+  font-size:12px;
+  line-height:2;
+}
+
+footer a {
+  color:#8edbff;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media(max-width:980px) {
+  .header-inner {
+    flex-wrap:wrap;
+    justify-content:center;
+    padding:15px 0;
+  }
+
+  nav {
+    justify-content:center;
+  }
+
+  .service-grid {
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .hero-inner {
+    grid-template-columns:1fr;
+  }
+
+  .hero-art {
+    max-width:540px;
+    width:100%;
+    margin:auto;
+  }
+
+  .portfolio-grid,
+  .package-grid {
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:650px) {
+  .section {
+    padding:50px 0;
+  }
+
+  .header-inner {
+    gap:15px;
+  }
+
+  nav {
+    gap:12px;
+  }
+
+  nav a {
+    font-size:12px;
+  }
+
+  .header-inner > .btn {
+    padding:10px 17px;
+  }
+
+  .hero-inner {
+    padding:50px 0;
+  }
+
+  .hero h1 {
+    font-size:43px;
+  }
+
+  .hero-art {
+    height:280px;
+  }
+
+  .desktop {
+    height:200px;
+  }
+
+  .laptop {
+    height:145px;
+  }
+
+  .phone {
+    height:135px;
+    width:70px;
+  }
+
+  .service-grid,
+  .portfolio-grid,
+  .package-grid,
+  .process-grid,
+  .about-grid,
+  .contact-grid,
+  .form-row {
+    grid-template-columns:1fr;
+  }
+
+  .trust-grid {
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .trust-grid div:nth-child(2) {
+    border-right:0;
+  }
+
+  .about h2,
+  .contact-info h2 {
+    font-size:30px;
+  }
+
+  .service-visual {
+    height:180px;
+  }
+
+  form {
+    padding:20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+  <div class="container header-inner">
+
+    <a class="brand" href="#home" aria-label="Digital Design Media and Marketing Group home">
+      <span class="brand-top">DIGIT<span>A</span>L</span>
+      <span class="brand-mid">DESIGN</span>
+      <span class="brand-bottom">MEDIA &amp; MARKETING GROUP</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#packages">Packages</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="btn" href="#contact">Request a Quote</a>
+
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+  <div class="container hero-inner">
+
+    <div>
+      <div class="hero-label">
+        PROFESSIONAL DIGITAL SOLUTIONS<br>
+        FOR BUSINESSES NATIONWIDE
+      </div>
+
+      <h1>
+        WE DESIGN<br>
+        CREATE<br>
+        <span>AND</span> MARKET
+      </h1>
+
+      <p>
+        Helping businesses across the United States
+        build a stronger online presence through
+        professional design, innovative digital
+        content, and strategic marketing solutions.
+      </p>
+
+      <a href="#contact" class="btn">
+        Get a Free Quote &rarr;
+      </a>
+
+      <div class="hero-points">
+        <div><strong>◎</strong> Nationwide Service</div>
+        <div><strong>✦</strong> Professional Quality</div>
+        <div><strong>✧</strong> Creative Solutions</div>
+        <div><strong>↗</strong> Business Growth</div>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-label="Digital website and commercial design illustration">
+
+      <div class="desktop">
+        <div class="desktop-screen">
+          <h3>MODERN<br>WEBSITES<br>THAT GROW<br>BUSINESSES</h3>
+          <p>CREATIVE DIGITAL SOLUTIONS</p>
+        </div>
+      </div>
+
+      <div class="laptop">
+        <div class="play">▶</div>
+      </div>
+
+      <div class="phone">
+        SOCIAL<br>MEDIA<br>MARKETING
+      </div>
+
+      <div class="glow-line"></div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+
+<section class="section services" id="services">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="eyebrow">OUR SERVICES</div>
+      <h2>PREMIUM DIGITAL SOLUTIONS</h2>
+      <p>
+        Everything your business needs to look professional,
+        attract customers, and grow.
+      </p>
+    </div>
+
+    <div class="service-grid">
+
+      <article class="service-card">
+        <div class="service-visual">
+          <div class="service-symbol">▣</div>
+        </div>
+        <div class="service-body">
+          <h3>WEBSITE DESIGN</h3>
+          <p>
+            Modern, responsive websites that showcase
+            your brand and turn visitors into customers.
+            We create professional digital experiences
+            for businesses nationwide.
+          </p>
+          <a href="#contact">LEARN MORE &rarr;</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-visual">
+          <div class="service-symbol">▶</div>
+        </div>
+        <div class="service-body">
+          <h3>DIGITAL COMMERCIAL PRODUCTION</h3>
+          <p>
+            AI-powered digital commercials that bring
+            your brand to life. We create scripts,
+            AI-generated visuals, voiceovers, and
+            professionally edited promotional videos
+            without traditional on-location filming.
+          </p>
+          <a href="#contact">LEARN MORE &rarr;</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-visual">
+          <div class="service-symbol">◇</div>
+        </div>
+        <div class="service-body">
+          <h3>BRANDING</h3>
+          <p>
+            Professional logos, brand identities,
+            color palettes, business cards,
+            promotional materials, and digital designs
+            that help your business stand out.
+          </p>
+          <a href="#contact">LEARN MORE &rarr;</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-visual">
+          <div class="service-symbol">↗</div>
+        </div>
+        <div class="service-body">
+          <h3>DIGITAL MARKETING</h3>
+          <p>
+            Engaging promotional graphics,
+            social media content, campaign creatives,
+            and digital marketing support designed
+            to help your brand connect with customers.
+          </p>
+          <a href="#contact">LEARN MORE &rarr;</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+
+<section class="trust-strip">
+  <div class="container trust-grid">
+    <div><strong>USA</strong>NATIONWIDE SERVICE</div>
+    <div><strong>✦</strong>PROFESSIONAL QUALITY</div>
+    <div><strong>↗</strong>STRATEGIC CREATIVE APPROACH</div>
+    <div><strong>✓</strong>YOUR SUCCESS IS OUR PRIORITY</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="section about" id="about">
+  <div class="container about-grid">
+
+    <div>
+      <div class="eyebrow">WHO WE ARE</div>
+
+      <h2>
+        YOUR CREATIVE PARTNER
+        IN THE DIGITAL WORLD
+      </h2>
+
+      <p>
+        At Digital Design, Media &amp; Marketing Group,
+        we help businesses establish a professional
+        and memorable online presence through
+        innovative digital solutions.
+      </p>
+
+      <p>
+        From modern websites and AI-powered commercials
+        to branding and digital marketing content,
+        our mission is to help businesses bring their
+        vision to life.
+      </p>
+
+      <p>
+        We proudly serve businesses nationwide,
+        delivering creative services through a
+        convenient, fully digital process.
+      </p>
+
+      <a class="btn" href="#contact">
+        Let's Work Together &rarr;
+      </a>
+    </div>
+
+    <div class="about-graphic">
+      <div>
+        YOUR VISION.<br>
+        <span>OUR CREATIVITY.</span><br>
+        YOUR BRAND.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+
+<section class="section portfolio" id="portfolio">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="eyebrow">FEATURED WORK</div>
+      <h2>OUR PORTFOLIO</h2>
+      <p>
+        Explore the types of professional digital
+        solutions we create for businesses.
+      </p>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <article class="project">
+        <div class="project-visual">
+          <div>
+            MODERN<br>
+            <span>WEBSITE</span><br>
+            DESIGN
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">WEBSITE DESIGN</div>
+          <h3>Professional Business Websites</h3>
+          <p>
+            Responsive layouts and polished
+            website experiences.
+          </p>
+          <p><em>Portfolio category preview.</em></p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-visual">
+          <div>
+            AI-POWERED<br>
+            <span>DIGITAL</span><br>
+            COMMERCIALS
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">DIGITAL COMMERCIAL PRODUCTION</div>
+          <h3>Creative Video Advertising</h3>
+          <p>
+            Digital commercials produced with
+            AI-generated visual and audio content.
+          </p>
+          <p><em>Portfolio category preview.</em></p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-visual">
+          <div>
+            PREMIUM<br>
+            <span>BRAND</span><br>
+            IDENTITY
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">BRANDING &amp; MARKETING</div>
+          <h3>Creative Brand Solutions</h3>
+          <p>
+            Brand identities, promotional designs,
+            and marketing graphics.
+          </p>
+          <p><em>Portfolio category preview.</em></p>
+        </div>
+      </article>
+
+    </div>
+
+    <p style="text-align:center;margin-top:28px;color:#627089;font-size:13px">
+      Actual project examples and video samples will be added as the portfolio is prepared.
+    </p>
+
+  </div>
+</section>
+
+<!-- PROCESS -->
+
+<section class="section" id="process">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="eyebrow">OUR PROCESS</div>
+      <h2>SIMPLE. STRATEGIC. EFFECTIVE.</h2>
+      <p>
+        A clear creative process from your first
+        consultation to final delivery.
+      </p>
+    </div>
+
+    <div class="process-grid">
+
+      <div class="process-step">
+        <div class="step-icon">✉</div>
+        <h3>DISCUSS</h3>
+        <p>
+          Tell us about your business,
+          goals, and creative vision.
+        </p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-icon">▤</div>
+        <h3>CREATE</h3>
+        <p>
+          We develop custom digital designs
+          and creative content.
+        </p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-icon">✓</div>
+        <h3>REVISE</h3>
+        <p>
+          We refine your project based on
+          the agreed revision process.
+        </p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-icon">↗</div>
+        <h3>LAUNCH</h3>
+        <p>
+          Your approved digital project
+          is prepared for delivery or launch.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- PACKAGES -->
+
+<section class="section packages" id="packages">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="eyebrow">OUR PACKAGES</div>
+      <h2>CREATIVE SOLUTIONS FOR EVERY STAGE</h2>
+      <p>
+        Flexible project options designed
+        around your business needs.
+      </p>
+    </div>
+
+    <div class="package-grid">
+
+      <div class="package">
+        <h3>Website Design</h3>
+        <p>
+          A professional digital home
+          for your business.
+        </p>
+        <ul>
+          <li>Responsive website design</li>
+          <li>Mobile-friendly layouts</li>
+          <li>Professional page styling</li>
+          <li>Custom project quote</li>
+        </ul>
+        <a href="#contact" class="btn">Request a Quote</a>
+      </div>
+
+      <div class="package featured">
+        <div class="eyebrow">FEATURED SERVICE</div>
+        <h3>Digital Commercials</h3>
+        <p>
+          Eye-catching AI-powered commercial
+          content for your brand.
+        </p>
+        <ul>
+          <li>Creative script development</li>
+          <li>AI-generated visual production</li>
+          <li>Voiceover and editing options</li>
+          <li>Short-form promotional formats</li>
+        </ul>
+        <a href="#contact" class="btn">Request a Quote</a>
+      </div>
+
+      <div class="package">
+        <h3>Branding &amp; Marketing</h3>
+        <p>
+          Professional designs that strengthen
+          your business identity.
+        </p>
+        <ul>
+          <li>Logo and brand design</li>
+          <li>Social media graphics</li>
+          <li>Digital promotional materials</li>
+          <li>Custom content packages</li>
+        </ul>
+        <a href="#contact" class="btn">Request a Quote</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="section contact" id="contact">
+  <div class="container contact-grid">
+
+    <div class="contact-info">
+
+      <div class="eyebrow">GET IN TOUCH</div>
+
+      <h2>
+        LET'S BRING YOUR
+        VISION TO LIFE
+      </h2>
+
+      <p>
+        Ready to create something exceptional?
+        Tell us about your project and let's
+        explore how we can help your business.
+      </p>
+
+      <p>
+        <strong>Email:</strong><br>
+        <a href="mailto:digitaldesignmmg@gmail.com">
+          digitaldesignmmg@gmail.com
+        </a>
+      </p>
+
+      <p>
+        <strong>Website:</strong><br>
+        digitaldesignmmg.com
+      </p>
+
+      <p>
+        <strong>Service Area:</strong><br>
+        Nationwide — United States
+      </p>
+
+    </div>
+
+    <form id="quoteForm">
+
+      <h3>REQUEST YOUR FREE QUOTE</h3>
+
+      <p style="font-size:13px;color:#627089;line-height:1.7">
+        Complete the form below to prepare an email
+        with your project details.
+      </p>
+
+      <div class="form-row">
+
+        <div class="field">
+          <label for="fullName">Full Name *</label>
+          <input id="fullName" name="fullName" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address *</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+
+      </div>
+
+      <div class="form-row">
+
+        <div class="field">
+          <label for="business">Business Name</label>
+          <input id="business" name="business">
+        </div>
+
+        <div class="field">
+          <label for="service">Service Needed *</label>
+          <select id="service" name="service" required>
+            <option value="">Select a Service</option>
+            <option>Website Design</option>
+            <option>Digital Commercial Production</option>
+            <option>Branding</option>
+            <option>Digital Marketing</option>
+            <option>Multiple Services</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="field">
+        <label for="budget">Estimated Project Budget</label>
+        <select id="budget" name="budget">
+          <option value="">Select a Budget</option>
+          <option>Under $250</option>
+          <option>$250 - $500</option>
+          <option>$500 - $1,000</option>
+          <option>$1,000 - $2,500</option>
+          <option>$2,500+</option>
+          <option>Not Sure Yet</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="details">Tell Us About Your Project *</label>
+        <textarea id="details" name="details"
+          placeholder="Describe your business, project goals, and what you would like us to create."
+          required></textarea>
+      </div>
+
+      <button class="btn" type="submit">
+        Prepare Quote Request &rarr;
+      </button>
+
+      <p style="font-size:12px;color:#627089;line-height:1.6">
+        This opens your email application so you
+        can review and send your request.
+      </p>
+
+    </form>
+
+  </div>
+</section>
+
+<!-- FINAL CALL TO ACTION -->
+
+<section class="footer-cta">
+  <div class="container">
+
+    <h2>READY TO GROW YOUR BUSINESS?</h2>
+
+    <p>
+      Let's bring your vision to life with
+      professional digital solutions.
+    </p>
+
+    <a href="#contact" class="btn">
+      Request Your Free Quote &rarr;
+    </a>
+
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="container">
+
+    <strong>
+      DIGITAL DESIGN, MEDIA &amp; MARKETING GROUP
+    </strong>
+
+    <div>
+      WEBSITE DESIGN |
+      DIGITAL COMMERCIAL PRODUCTION |
+      BRANDING |
+      DIGITAL MARKETING
+    </div>
+
+    <div>
+      <a href="mailto:digitaldesignmmg@gmail.com">
+        digitaldesignmmg@gmail.com
+      </a>
+      &nbsp; | &nbsp;
+      digitaldesignmmg.com
+    </div>
+
+    <div>
+      &copy; <span id="year"></span>
+      Digital Design, Media &amp; Marketing Group.
+      All Rights Reserved.
+    </div>
+
+  </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+document.getElementById("quoteForm").addEventListener(
+  "submit",
+  function(event) {
+    event.preventDefault();
+
+    const name =
+      document.getElementById("fullName").value.trim();
+
+    const email =
+      document.getElementById("email").value.trim();
+
+    const business =
+      document.getElementById("business").value.trim();
+
+    const service =
+      document.getElementById("service").value;
+
+    const budget =
+      document.getElementById("budget").value;
+
+    const details =
+      document.getElementById("details").value.trim();
+
+    const subject =
+      "New Project Quote Request - " + service;
+
+    const body =
+      "New Project Quote Request\n\n" +
+      "Name: " + name + "\n" +
+      "Email: " + email + "\n" +
+      "Business: " + business + "\n" +
+      "Service: " + service + "\n" +
+      "Budget: " + budget + "\n\n" +
+      "Project Details:\n" + details;
+
+    const mailLink =
+      "mailto:digitaldesignmmg@gmail.com" +
+      "?subject=" + encodeURIComponent(subject) +
+      "&body=" + encodeURIComponent(body);
+
+    window.location.href = mailLink;
+  }
+);
+</script>
+
+</body>
+</html>
