@@ -924,8 +924,10 @@ footer a {
 }
 
 
-/* MOBILE */
+/* MOBILE - HERO AND HIGHLIGHTS */
 @media (max-width: 650px) {
+
+  /* Keep the white highlights strip */
   .highlights-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px 12px;
@@ -935,12 +937,50 @@ footer a {
     padding: 22px 0;
   }
 
+  /* Darken and reposition the hero background */
   .hero {
-    background-position: 62% center;
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(2, 10, 28, 0.96) 0%,
+        rgba(2, 10, 28, 0.90) 55%,
+        rgba(2, 10, 28, 0.76) 100%
+      ),
+      url("digitaldesignmmg-hero-background.png");
+
+    background-position: 30% center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
+  /* Adjust mobile hero spacing */
+  .hero-inner {
+    min-height: auto;
+    padding: 65px 0;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Make headline fit mobile screens */
   .hero h1 {
-    font-size: clamp(34px, 9vw, 43px);
+    font-size: clamp(32px, 8vw, 43px);
+    line-height: 1.08;
+    letter-spacing: -1px;
+  }
+
+  /* Improve paragraph readability */
+  .hero-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 100%;
+  }
+
+  .hero-label {
+    font-size: 11px;
+    letter-spacing: 2px;
   }
 }
 
