@@ -891,6 +891,69 @@ footer a {
   }
 }
 
+
+
+.hero .hero-points {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+}
+
+.hero .hero-points > div {
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .hero .hero-points {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Hero content and full-width highlights */
+.hero-inner {
+  grid-template-columns: minmax(0, 48%) minmax(0, 1fr);
+}
+
+.hero-content {
+  grid-column: 1;
+  min-width: 0;
+}
+
+.hero-art {
+  grid-column: 2;
+}
+
+.hero .hero-points {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content,
+  .hero .hero-points {
+    grid-column: 1;
+  }
+
+  .hero-art {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero .hero-points {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 </style>
 </head>
 
@@ -933,10 +996,11 @@ footer a {
 
 <!-- HERO -->
 
+
 <section class="hero" id="home">
   <div class="container hero-inner">
 
-    <div>
+    <div class="hero-content">
       <div class="hero-label">
         PROFESSIONAL DIGITAL SOLUTIONS<br>
         FOR BUSINESSES NATIONWIDE
@@ -948,40 +1012,43 @@ footer a {
         <span>AND</span> MARKET
       </h1>
 
-    
-
-<p>
-  Transform your business with premium website design,
-  captivating digital commercials, professional branding,
-  and strategic digital marketing solutions.
-  Helping businesses nationwide build a powerful
-  and memorable online presence.
-</p>
-
+      <p>
+        Transform your business with premium website design,
+        captivating digital commercials, professional branding,
+        and strategic digital marketing solutions.
+        Helping businesses nationwide build a powerful
+        and memorable online presence.
+      </p>
 
       <a href="#contact" class="btn">
         Get a Free Quote &rarr;
       </a>
-
-      
-<div class="hero-points">
-  <div><span class="point-icon">◎</span><span>NATIONWIDE SERVICE</span></div>
-  <div><span class="point-icon">♢</span><span>PROFESSIONAL QUALITY</span></div>
-  <div><span class="point-icon">✧</span><span>CREATIVE SOLUTIONS</span></div>
-  <div><span class="point-icon">↗</span><span>BUSINESS GROWTH</span></div>
-</div>
-
     </div>
 
+    <div class="hero-art" aria-hidden="true"></div>
 
-
-
-<div class="hero-art" aria-hidden="true"></div>
-
-
+    <div class="hero-points">
+      <div>
+        <span class="point-icon">◎</span>
+        <span>NATIONWIDE SERVICE</span>
+      </div>
+      <div>
+        <span class="point-icon">♢</span>
+        <span>PROFESSIONAL QUALITY</span>
+      </div>
+      <div>
+        <span class="point-icon">✧</span>
+        <span>CREATIVE SOLUTIONS</span>
+      </div>
+      <div>
+        <span class="point-icon">↗</span>
+        <span>BUSINESS GROWTH</span>
+      </div>
+    </div>
 
   </div>
 </section>
+
 
 <!-- SERVICES -->
 
