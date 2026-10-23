@@ -165,12 +165,18 @@ nav a:hover {color:var(--blue)}
 /* HERO */
 
 .hero {
-  position:relative;
-  overflow:hidden;
-  color:white;
+  position: relative;
+  overflow: hidden;
+  color: white;
   background:
-    radial-gradient(circle at 78% 42%,#0662be88,transparent 35%),
-    linear-gradient(120deg,#020c20 5%,#082552 65%,#04132d);
+    linear-gradient(
+      90deg,
+      rgba(2, 10, 28, 0.85) 0%,
+      rgba(2, 10, 28, 0.45) 38%,
+      rgba(2, 10, 28, 0.05) 70%
+    ),
+    url("digitaldesignmmg-hero-background.png")
+    center center / cover no-repeat;
 }
 
 .hero:before {
@@ -185,16 +191,18 @@ nav a:hover {color:var(--blue)}
   transform:perspective(450px) rotateX(28deg) scale(1.5);
 }
 
+
 .hero-inner {
-  min-height:520px;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  align-items:center;
-  gap:40px;
-  position:relative;
-  z-index:1;
-  padding:65px 0;
+  min-height: 520px;
+  display: grid;
+  grid-template-columns: minmax(0, 48%) minmax(0, 1fr);
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+  padding: 65px 0;
 }
+
 
 .hero-label {
   font-size:13px;
@@ -752,15 +760,17 @@ footer a {
     grid-template-columns:repeat(2,1fr);
   }
 
-  .hero-inner {
-    grid-template-columns:1fr;
-  }
 
-  .hero-art {
-    max-width:540px;
-    width:100%;
-    margin:auto;
-  }
+.hero-inner {
+  grid-template-columns: 1fr;
+  min-height: 480px;
+  padding: 55px 0;
+}
+
+.hero-art {
+  display: none;
+}
+
 
   .portfolio-grid,
   .package-grid {
@@ -925,14 +935,10 @@ footer a {
     </div>
 
 
-<div class="hero-art">
-  <img
-    src="digitaldesignmmg-hero.webp"
-    alt="Digital website design, branding and marketing workspace"
-    decoding="async"
-    style="display:block; width:100%; max-width:100%; height:auto; border-radius:16px;"
-  >
-</div>
+
+
+<div class="hero-art" aria-hidden="true"></div>
+
 
 
   </div>
