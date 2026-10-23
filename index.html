@@ -855,6 +855,42 @@ footer a {
     padding:20px;
   }
 }
+  
+.hero .hero-points {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  width: 100%;
+  margin-top: 28px;
+}
+
+.hero .hero-points > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 0;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  line-height: 1.35;
+}
+
+.hero .hero-points .point-icon {
+  color: #36a5ff;
+  font-size: 25px;
+  line-height: 1;
+}
+
+@media (max-width: 650px) {
+  .hero .hero-points {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 12px;
+  }
+}
+
 </style>
 </head>
 
@@ -913,9 +949,10 @@ footer a {
       </h1>
 
     
+
 <p>
   Transform your business with premium website design,
-  AI-powered digital commercials, professional branding,
+  captivating digital commercials, professional branding,
   and strategic digital marketing solutions.
   Helping businesses nationwide build a powerful
   and memorable online presence.
@@ -926,12 +963,14 @@ footer a {
         Get a Free Quote &rarr;
       </a>
 
-      <div class="hero-points">
-        <div><strong>◎</strong> Nationwide Service</div>
-        <div><strong>✦</strong> Professional Quality</div>
-        <div><strong>✧</strong> Creative Solutions</div>
-        <div><strong>↗</strong> Business Growth</div>
-      </div>
+      
+<div class="hero-points">
+  <div><span class="point-icon">◎</span><span>NATIONWIDE SERVICE</span></div>
+  <div><span class="point-icon">♢</span><span>PROFESSIONAL QUALITY</span></div>
+  <div><span class="point-icon">✧</span><span>CREATIVE SOLUTIONS</span></div>
+  <div><span class="point-icon">↗</span><span>BUSINESS GROWTH</span></div>
+</div>
+
     </div>
 
 
@@ -982,13 +1021,15 @@ footer a {
         </div>
         <div class="service-body">
           <h3>DIGITAL COMMERCIAL PRODUCTION</h3>
-          <p>
-            AI-powered digital commercials that bring
-            your brand to life. We create scripts,
-            AI-generated visuals, voiceovers, and
-            professionally edited promotional videos
-            without traditional on-location filming.
-          </p>
+         
+<p>
+  Captivating digital commercials that bring
+  your brand to life. We create compelling scripts,
+  stunning digital visuals, professional voiceovers,
+  and expertly edited promotional videos
+  without the need for traditional on-location filming.
+</p>
+
           <a href="#contact">LEARN MORE &rarr;</a>
         </div>
       </article>
