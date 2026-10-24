@@ -376,33 +376,35 @@ nav a:hover {color:var(--blue)}
 .service-card:hover {
   transform:translateY(-5px);
 }
+/* PROFESSIONAL SERVICE IMAGES */
 
 .service-visual {
-  height:165px;
-  background:linear-gradient(145deg,#061733,#0873d5);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  position:relative;
-  overflow:hidden;
+  width: 100%;
+  height: 165px;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
 }
 
-.service-visual:after {
-  content:"";
-  position:absolute;
-  width:190px;
-  height:190px;
-  border:1px solid #3bcaff88;
-  border-radius:50%;
-  box-shadow:0 0 40px #008aff55;
+.service-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.service-symbol {
-  position:relative;
-  z-index:1;
-  font-size:64px;
-  color:#bceeff;
-  text-shadow:0 0 18px #24baff;
+/* REMOVE OLD DECORATIVE CIRCLE */
+
+.service-visual::after {
+  display: none;
+  content: none;
+}
+
+/* KEEP SERVICE CARDS CONSISTENT */
+
+.service-card {
+  overflow: hidden;
 }
 
 .service-body {
@@ -1245,8 +1247,16 @@ footer a {
 
       <article class="service-card">
         <div class="service-visual">
-          <div class="service-symbol">▣</div>
-        </div>
+  <img
+    src="website-design-no-white-border.webp"
+    alt="Professional website design displayed on modern digital devices"
+    loading="lazy"
+    decoding="async"
+    width="768"
+    height="512"
+  >
+</div>
+        
         <div class="service-body">
           <h3>WEBSITE DESIGN</h3>
           <p>
@@ -1261,8 +1271,16 @@ footer a {
 
       <article class="service-card">
         <div class="service-visual">
-          <div class="service-symbol">▶</div>
-        </div>
+  <img
+    src="digital-commercial-production-no-white-border.webp"
+    alt="Professional digital commercial production and video editing"
+    loading="lazy"
+    decoding="async"
+    width="768"
+    height="512"
+  >
+</div>
+        
         <div class="service-body">
           <h3>DIGITAL COMMERCIAL PRODUCTION</h3>
          
@@ -1279,9 +1297,16 @@ footer a {
       </article>
 
       <article class="service-card">
-        <div class="service-visual">
-          <div class="service-symbol">◇</div>
-        </div>
+       <div class="service-visual">
+  <img
+    src="branding-no-white-border.webp"
+    alt="Professional branding, logo design, and luxury brand identity materials"
+    loading="lazy"
+    decoding="async"
+    width="768"
+    height="512"
+  >
+</div>
         <div class="service-body">
           <h3>BRANDING</h3>
           <p>
@@ -1296,8 +1321,15 @@ footer a {
 
       <article class="service-card">
         <div class="service-visual">
-          <div class="service-symbol">↗</div>
-        </div>
+  <img
+    src="digital-marketing-no-white-border.webp"
+    alt="Professional digital marketing, social media, and business growth"
+    loading="lazy"
+    decoding="async"
+    width="768"
+    height="512"
+  >
+</div>
         <div class="service-body">
           <h3>DIGITAL MARKETING</h3>
           <p>
