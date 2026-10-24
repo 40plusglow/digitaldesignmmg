@@ -380,7 +380,7 @@ nav a:hover {color:var(--blue)}
 
 .service-visual {
   width: 100%;
-  height: 165px;
+  height: 190px;
   background: #ffffff;
   position: relative;
   overflow: hidden;
@@ -427,11 +427,32 @@ nav a:hover {color:var(--blue)}
   flex:1;
 }
 
+/* PROFESSIONAL LEARN MORE BUTTONS */
+
 .service-body a {
-  color:var(--blue);
-  font-size:12px;
-  font-weight:800;
-  margin-top:15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  width: fit-content;
+  padding: 9px 16px;
+  margin-top: 15px;
+
+  color: #0868ed;
+  background: #ffffff;
+  border: 1.5px solid #0868ed;
+  border-radius: 30px;
+
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.service-body a:hover {
+  background: #0868ed;
+  color: #ffffff;
 }
 
 /* TRUST STRIP */
@@ -1094,7 +1115,20 @@ footer a {
     padding: 22px 0;
   }
 }
+/* MOBILE SERVICE IMAGE ADJUSTMENT */
 
+@media (max-width: 650px) {
+  .service-visual {
+    height: 220px;
+  }
+
+  .service-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
 </style>
 </head>
 
