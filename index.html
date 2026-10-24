@@ -1023,30 +1023,36 @@ footer a {
     display: none;
   }
 
-  /* MOBILE HERO LAYOUT */
-  .hero-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    width: 100%;
-    min-height: 0;
-    gap: 0;
-    padding: 0;
-  }
+/* MOBILE HERO LAYOUT - NO GAPS */
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  max-width: 100%;
+  min-height: 0;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+}
 
-  /* SHOW COMPLETE HERO IMAGE ABOVE TEXT */
-  .hero-art {
-    order: 0;
-    display: block !important;
-    width: 100%;
-    max-width: none;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    margin: 0;
-    background:
-      url("digitaldesignmmg-hero-background.png")
-      center center / contain no-repeat;
-  }
+/* MOBILE HERO IMAGE - FULL WIDTH, NO NAVY GAPS */
+.hero-art {
+  order: 0;
+  display: block !important;
+
+  width: 100vw;
+  max-width: none;
+  height: 300px;
+
+  aspect-ratio: auto;
+  margin: 0 0 0 calc(50% - 50vw);
+
+  background-image: url("digitaldesignmmg-hero-background.png");
+  background-position: 65% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
   /* HERO TEXT BELOW IMAGE */
   .hero-content {
