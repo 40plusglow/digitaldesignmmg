@@ -1128,6 +1128,49 @@ footer a {
     object-position: center;
   }
 }
+
+
+/* =====================================
+   PORTFOLIO - EQUAL HEIGHT IMAGE AREAS
+   ===================================== */
+
+.portfolio-grid .project-visual {
+  height: 300px !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Keep images fully visible without cropping */
+.portfolio-grid .project-visual img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  display: block;
+}
+
+/* Keep video the same height as images */
+.portfolio-grid .project-visual video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  display: block;
+}
+
+/* Align portfolio descriptions */
+.portfolio-grid .project {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-grid .project-body {
+  flex: 1;
+}
+
+  
 </style>
 </head>
 
